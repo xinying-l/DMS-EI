@@ -1,0 +1,22 @@
+# Public shape example only. This is not a training configuration.
+input_order: [infrared, rgb]
+
+feature_examples:
+  P3:
+    channels: 64
+    height: 80
+    width: 80
+  P4:
+    channels: 128
+    height: 40
+    width: 40
+  P5:
+    channels: 256
+    height: 20
+    width: 20
+
+preview_module:
+  exposed_component: quality_guided_bidirectional_interaction
+  shape_preserving: true
+  complete_training_pipeline: false
+
